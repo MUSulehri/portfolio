@@ -200,10 +200,10 @@ const GlowingBadge = ({ children, color }) => {
 export default function Portfolio({
   primaryColor = "#0F1B2D",
   accentColor = "#0A84FF",
-  name = "John Doe",
+  name = "Muhammad Usman Sulehri",
   primaryHeadline = "Senior Software Consultant",
   secondaryHeadline = "Helping Teams Build Scalable Systems",
-  subheadline = "4+ years of experience in backend engineering, cloud architecture, and technical consulting."
+  subheadline = "4+ years of experience in fullstack development, cloud architecture, and technical consulting."
 }) {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -242,9 +242,10 @@ export default function Portfolio({
   ];
 
   const techStack = {
-    languages: ["Java", "Spring Boot", "Python", "Node.js", "React"],
-    cloud: ["AWS (EC2, Lambda, S3)", "Docker", "GitHub Actions"],
+    languages: ["Java", "Spring Boot", "Python", "Node.js", "React", "TypeScript", "Next.js"],
+    cloud: ["AWS (ECS, EC2, Lambda, S3)", "Docker", "GitHub Actions"],
     databases: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    messaging: ["Apache Kafka", "AWS SQS"]
   };
 
   const projects = [
@@ -286,25 +287,25 @@ export default function Portfolio({
   const testimonials = [
     {
       id: 1,
-      text: "Working with John was a game-changer for our engineering team. His expertise in cloud architecture helped us scale our platform to handle 10x the traffic without increasing costs.",
-      name: "Sarah Johnson",
-      position: "CTO, TechStart Inc.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80",
+      text: "Usman has been excellent to work with over the past few months and has delivered lots of additions (both major and minor) to our SaaS app. His communication is excellent and provides good solutions from minimal briefs. I would not hesitate to continue working with Usman for our future.",
+      name: "Bruce Buxton",
+      position: "Co-Founder | motionhub.ai",
+      image: "/recommendation3.jpeg",
     },
     {
       id: 2,
-      text: "John's ability to quickly understand our complex systems and provide actionable recommendations was impressive. He delivered exactly what we needed, on time and with excellent communication.",
-      name: "Michael Chen",
-      position: "Engineering Manager, DataFlow Systems",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80",
+      text: "I enjoyed working with Usman at Flywheel and can confidently say he is an outstanding software engineer. Usman consistently demonstrated a remarkable ability to deliver high-quality work on time, every time. His commitment to exceeding expectations was evident in every project he tackled. Usman is incredibly responsible and takes his commitments seriously. He approaches every task with a sense of ownership and dedication that is truly commendable. His technical skills are top-notch, and he has an exceptional ability to translate complex requirements into seamless solutions making him an invaluable member of our team.",
+      name: "Anastasia Vernidub",
+      position: "Product Manager | B2B SaaS & B2C E-commerce | Healthcare-Tech, AI | 0→1 Product Development | ex‑Accenture",
+      image: "/recommendation.jpeg",
     },
     {
       id: 3,
-      text: "We hired John to help optimize our backend services, and the results exceeded our expectations. His deep knowledge of distributed systems helped us resolve issues that had been plaguing us for months.",
-      name: "Emily Rodriguez",
-      position: "Product Lead, CloudNative",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80",
-    },
+      text: "Usman is one of those rare, faultless colleagues. There is no task too hard, no challenge that can't be approached, nor conversation that can't be had. To achieve, he puts in 101% effort into every area. I couldn't ask for a more reliable colleague!",
+      name: "Peter Joseph",
+      position: "Engineering Manager | Data Analyst | Flywheel",
+      image: "/recommendation2.jpeg",
+    }
   ];
 
   const workProcess = [
@@ -628,7 +629,7 @@ export default function Portfolio({
                 <div className="relative z-10 rounded-2xl p-1 bg-gradient-to-tr from-blue-400 to-purple-500 shadow-2xl">
                   <div className="bg-white rounded-2xl overflow-hidden">
                     <ImageWithFallback
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                      src="/profile_picture_glasses.jpg"
                       alt="Professional portrait"
                       className="w-full h-auto rounded-xl"
                     />
@@ -644,7 +645,7 @@ export default function Portfolio({
                 >
                   <pre className="text-xs text-gray-700 dark:text-gray-300">
                     <code>{`function optimize(system) {
-  return system.scale(10);
+  return system.scale(10x);
 }`}</code>
                   </pre>
                 </motion.div>
@@ -755,9 +756,28 @@ export default function Portfolio({
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <AnimatedCounter value={4} label="Years Experience" color={accentColor} icon={<Code size={24} style={{ color: accentColor }} />} />
-                <AnimatedCounter value={20} label="Projects Completed" color="#FF9F0A" icon={<Server size={24} style={{ color: "#FF9F0A" }} />} />
-                <AnimatedCounter value={15} label="Happy Clients" color="#30D158" icon={<Zap size={24} style={{ color: "#30D158" }} />} />
-                <AnimatedCounter value={8} label="Tech Stacks" color="#FF375F" icon={<Database size={24} style={{ color: "#FF375F" }} />} />
+                <AnimatedCounter value={10} label="Projects Completed" color="#FF9F0A" icon={<Server size={24} style={{ color: "#FF9F0A" }} />} />
+                <AnimatedCounter value={7} label="Happy Clients" color="#30D158" icon={<Zap size={24} style={{ color: "#30D158" }} />} />
+                <AnimatedCounter value={10} label="Tech Stacks" color="#FF375F" icon={<Database size={24} style={{ color: "#FF375F" }} />} />
+                <div className="md:col-span-2 flex justify-center">
+                  <motion.div
+                    className="bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-xl shadow-md border-2 border-yellow-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 max-w-sm w-full"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="text-2xl font-extrabold text-yellow-600">🏆</div>
+                      <div className="p-3 rounded-lg bg-yellow-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-600" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="text-lg font-semibold text-gray-800 mt-4">1x Employee of the Month</div>
+                  </motion.div>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -889,7 +909,7 @@ export default function Portfolio({
             Technologies I work with to build robust, scalable solutions
           </motion.p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-8xl mx-auto [&>*:last-child:nth-child(3n+1)]:col-start-2">
             <motion.div
               className="bg-white p-10 rounded-xl shadow-xl border-t-4 hover:shadow-2xl transition-all duration-300"
               style={{ borderColor: "#0A84FF" }}
@@ -971,6 +991,38 @@ export default function Portfolio({
               </h3>
               <div className="flex flex-wrap gap-3">
                 {techStack.databases.map((tech, index) => (
+                  <motion.span
+                    key={index}
+                    className="px-4 py-2 bg-gray-100 rounded-lg text-gray-800 border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all"
+                    whileHover={{ y: -3 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: 0.1 * index }}
+                  >
+                    {tech}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="bg-white p-10 rounded-xl shadow-xl border-t-4 hover:shadow-2xl transition-all duration-300"
+              style={{ borderColor: "#FF9F0A" }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              <h3
+                className="text-xl font-semibold mb-6 flex items-center"
+                style={{ color: primaryColor }}
+              >
+                <Database size={24} className="mr-3" style={{ color: "#FF9F0A" }} />
+                Messaging & Caching
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {techStack.messaging.map((tech, index) => (
                   <motion.span
                     key={index}
                     className="px-4 py-2 bg-gray-100 rounded-lg text-gray-800 border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all"
@@ -1389,14 +1441,14 @@ export default function Portfolio({
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <motion.a
-                href="mailto:contact@example.com"
+                href="mailto:msulehrissi@gmail.com"
                 className="flex items-center gap-3 px-10 py-4 rounded-lg text-white font-medium transition-all relative overflow-hidden group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 style={{ backgroundColor: accentColor }}
               >
                 <Mail size={20} />
-                <span className="text-lg">contact@example.com</span>
+                <span className="text-lg">msulehrissi@gmail.com</span>
                 <motion.div
                   className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"
                   whileHover={{ opacity: 0.2 }}
@@ -1405,7 +1457,7 @@ export default function Portfolio({
 
               <div className="flex gap-5">
                 <motion.a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/muhammad-usman-sulehri/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 rounded-full border-2 border-gray-300 hover:border-blue-400 transition-colors relative overflow-hidden group"
@@ -1418,7 +1470,7 @@ export default function Portfolio({
                     className="absolute inset-0 bg-blue-50 opacity-0 group-hover:opacity-100 transition-opacity z-[-1]"
                   />
                 </motion.a>
-                <motion.a
+                {/* <motion.a
                   href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1431,21 +1483,7 @@ export default function Portfolio({
                   <motion.div
                     className="absolute inset-0 bg-gray-100 opacity-0 group-hover:opacity-100 transition-opacity z-[-1]"
                   />
-                </motion.a>
-                <motion.a
-                  href="https://upwork.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-4 rounded-full border-2 border-gray-300 hover:border-green-500 transition-colors relative overflow-hidden group"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  aria-label="Upwork Profile"
-                >
-                  <ExternalLink size={24} className="text-gray-700 group-hover:text-green-500 transition-colors" />
-                  <motion.div
-                    className="absolute inset-0 bg-green-50 opacity-0 group-hover:opacity-100 transition-opacity z-[-1]"
-                  />
-                </motion.a>
+                </motion.a> */}
               </div>
             </motion.div>
           </div>
