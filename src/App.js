@@ -244,8 +244,8 @@ export default function Portfolio({
   const techStack = {
     languages: ["Java", "Spring Boot", "Python", "Node.js", "React", "TypeScript", "Next.js"],
     cloud: ["AWS (ECS, EC2, Lambda, S3)", "Docker", "GitHub Actions"],
-    databases: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
-    messaging: ["Apache Kafka", "AWS SQS"]
+    databases: ["PostgreSQL", "MySQL", "MongoDB"],
+    messaging: ["Apache Kafka", "AWS SQS", "Redis"]
   };
 
   const projects = [
@@ -629,7 +629,7 @@ export default function Portfolio({
                 <div className="relative z-10 rounded-2xl p-1 bg-gradient-to-tr from-blue-400 to-purple-500 shadow-2xl">
                   <div className="bg-white rounded-2xl overflow-hidden">
                     <ImageWithFallback
-                      src="/profile_picture_glasses.jpg"
+                      src="/ProfilePictureProfessional.png"
                       alt="Professional portrait"
                       className="w-full h-auto rounded-xl"
                     />
