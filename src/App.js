@@ -304,7 +304,7 @@ export default function Portfolio({
       text: "Usman is one of those rare, faultless colleagues. There is no task too hard, no challenge that can't be approached, nor conversation that can't be had. To achieve, he puts in 101% effort into every area. I couldn't ask for a more reliable colleague!",
       name: "Peter Joseph",
       position: "Engineering Manager | Data Analyst | Flywheel",
-      image: "/recommendation2.jpeg",
+      image: "/recommendation2.png",
     }
   ];
 
